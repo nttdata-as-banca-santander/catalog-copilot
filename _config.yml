@@ -27,7 +27,6 @@ theme: "minima"
 plugins:
   - jekyll-archives
   - jekyll-feed
-  - jekyll-seo-tag
 
 # Archivos para la colección de etiquetas (opcional si usas data)
 # Puedes habilitar página por tag si el tema lo soporta:

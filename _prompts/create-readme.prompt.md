@@ -4,7 +4,7 @@ mode: agent
 tags: ["document", "code"]
 description: 'Create a comprehensive README.md file for the project'
 excerpt: 'Create a comprehensive README.md file for the project'
-layout: single
+layout: prompt_detail
 ---
 
 Review the entire project folder and codebase to create a comprehensive README.md file that includes essential sections such as description, installation, usage and contribution guidelines. Ensure the documentation is clear, concise, and follows best practices for technical documentation.

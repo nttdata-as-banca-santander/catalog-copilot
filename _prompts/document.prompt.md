@@ -6,7 +6,7 @@ excerpt: 'Guide an AI agent through a structured process to assess documentation
 author: Daniel Meppiel
 llm: github/gpt-4.1
 tags: ["document"]
-layout: single
+layout: prompt_detail
 ---
 
 # Documentation Assistant: Coverage Analysis and Documentation Creation

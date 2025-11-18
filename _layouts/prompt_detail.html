@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="prompt-detail">
+    <h1>{{ page.title }}</h1>
+    <p>
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </p>
+    <section>{{ content }}</section>
+    <hr>
+    <button onclick="toggleCode()">Ver como código</button>
+    <pre id="code" style="display:none;">{{ content | escape }}</pre>
+    <script>
+        function toggleCode() {
+          var codeElem = document.getElementById('code');
+          codeElem.style.display = codeElem.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</article>

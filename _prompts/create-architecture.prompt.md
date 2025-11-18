@@ -4,7 +4,7 @@ mode: agent
 tags: ["document", "code"]
 description: 'Create a comprehensive ARCHITECTURE.md file for the project'
 excerpt: 'Create a comprehensive ARCHITECTURE.md file for the project'
-layout: single
+layout: prompt_detail
 ---
 
 Review the entire project folder and codebase to create a comprehensive ARCHITECTURE.md file that includes essential sections such as system overview, components, data flow, architectural decisions, and module interaction patterns. Ensure the documentation is clear, concise, and follows best practices for technical documentation.

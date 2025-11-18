@@ -1,0 +1,62 @@
+# Configuración básica
+title: "Galería de Prompts"
+description: "Sitio web estático para mostrar ficheros de prompts e instrucciones con filtrado por etiquetas"
+baseurl: "" # Si el proyecto está en una subcarpeta, pon /nombre-repo
+url: "https://vgomecob.github.io" # Cambia si es necesario
+
+# Activar colección personalizada para prompts
+collections:
+  prompts:
+    output: true
+    permalink: /prompts/:title/
+
+# Ruta de las colecciones
+defaults:
+  -
+    scope:
+      path: "_prompts"
+      type: prompts
+    values:
+      layout: "prompt_detail"
+      permalink: /prompts/:title/
+
+# Configuración de temas
+theme: "minimal-mistakes-jekyll" # Muy recomendable para lo que necesitas
+
+# Activar plugins, necesario para colecciones y tags
+plugins:
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Archivos para la colección de etiquetas (opcional si usas data)
+# Puedes habilitar página por tag si el tema lo soporta:
+jekyll-archives:
+  enabled:
+    - tags
+    - categories
+  layouts:
+    tag: archive
+    category: archive
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+# Mostrar tags en las tarjetas
+collections_dir: collections
+
+# Configuración de Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Otras opciones útiles para proyectos con GitHub Pages
+github:
+  is_project_page: true
+
+# Excluir carpetas o archivos no necesarios
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/

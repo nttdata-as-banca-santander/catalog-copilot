@@ -41,9 +41,6 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
-# Mostrar tags en las tarjetas
-collections_dir: collections
-
 # Configuración de Markdown
 markdown: kramdown
 kramdown:

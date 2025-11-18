@@ -21,16 +21,13 @@ defaults:
       permalink: /prompts/:title/
 
 # Configuración de temas
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+theme: "minima"
 
 # Activar plugins, necesario para colecciones y tags
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
+  - jekyll-archives
   - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+  - jekyll-seo-tag
 
 # Archivos para la colección de etiquetas (opcional si usas data)
 # Puedes habilitar página por tag si el tema lo soporta:
@@ -58,8 +55,8 @@ github:
   is_project_page: true
 
 # Excluir carpetas o archivos no necesarios
-#exclude:
-#  - Gemfile
-#  - Gemfile.lock
-#  - node_modules/
-#  - vendor/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/

@@ -2,7 +2,7 @@
 title: "Galería de Prompts"
 description: "Sitio web estático para mostrar ficheros de prompts e instrucciones con filtrado por etiquetas"
 baseurl: "" # Si el proyecto está en una subcarpeta, pon /nombre-repo
-url: "https://vgomecob.github.io" # Cambia si es necesario
+url: "https://nttdata-as-banca-santander.github.io" # Cambia si es necesario
 
 # Activar colección personalizada para prompts
 collections:
@@ -21,13 +21,16 @@ defaults:
       permalink: /prompts/:title/
 
 # Configuración de temas
-theme: "minimal-mistakes-jekyll" # Muy recomendable para lo que necesitas
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 # Activar plugins, necesario para colecciones y tags
 plugins:
-  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
-  - jekyll-seo-tag
+  - jemoji
+  - jekyll-include-cache
 
 # Archivos para la colección de etiquetas (opcional si usas data)
 # Puedes habilitar página por tag si el tema lo soporta:
@@ -55,8 +58,8 @@ github:
   is_project_page: true
 
 # Excluir carpetas o archivos no necesarios
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
+#exclude:
+#  - Gemfile
+#  - Gemfile.lock
+#  - node_modules/
+#  - vendor/
